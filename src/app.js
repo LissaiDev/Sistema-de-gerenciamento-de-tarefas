@@ -5,7 +5,7 @@ const connectToDatabase = require("./config/database");
 const SignIn = require("./routes/signInRoute");
 const cookieParser = require("cookie-parser");
 const login = require("./routes/loginRoute");
-
+const isLogged = require("./utils/isLogged");
 //Setting up express
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -16,6 +16,7 @@ app.use(cookieParser());
 connectToDatabase();
 
 //Routes
+app.use("/islogged", isLogged)
 app.use("/signin", SignIn);
 app.use("/login", login)
 
