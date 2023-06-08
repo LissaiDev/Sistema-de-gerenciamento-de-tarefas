@@ -27,11 +27,8 @@ O sistema de gerenciamento de tarefas é uma aplicação que permite que equipes
 7. Criar API para consulta e filtragem de tarefas:
    - Implementar endpoints que permitam aos usuários recuperar e filtrar tarefas com base em critérios como responsável, status ou prazo.
 
-8. Implementar notificações por email:
-   - Configurar o sistema para enviar notificações automáticas por email quando ocorrerem alterações nas tarefas (atribuição, atualização de status, comentários, etc.).
-
-9. Implementar sistema de permissões:
+8. Implementar sistema de permissões:
    - Adicionar lógica de permissões para garantir que apenas usuários autorizados possam criar, atualizar ou excluir tarefas.
 
-10. Criar API para exclusão de tarefas:
+9. Criar API para exclusão de tarefas:
     - Desenvolver endpoints que permitam a exclusão de tarefas, caso necessário.
