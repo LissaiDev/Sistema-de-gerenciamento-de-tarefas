@@ -16,9 +16,9 @@ app.use(cookieParser());
 connectToDatabase();
 
 //Routes
-app.use("/islogged", isLogged)
+app.use("/islogged", isLogged);
 app.use("/signin", SignIn);
-app.use("/login", login)
+app.use("/login", login);
 
 //Listening
 app.listen(8080,()=>{
