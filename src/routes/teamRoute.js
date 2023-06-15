@@ -1,0 +1,14 @@
+const express = require("express");
+const router = express.Router();
+const createTeam =require("../controllers/createTeamController");
+const Team = require("../models/Team");
+const isLogged = require("../utils/isLogged");
+const addToTeamValidation = require("../utils/addToTeamValidation");
+const addToTeamController = require("../controllers/addToTeamController");
+const createTeamValidation = require("../utils/createTeamValidation");
+const taskValidation = require("../utils/taskValidation");
+const createTaskController = require("../controllers/createTaskController");
+router.post("/create",createTeamValidation,createTeam);
+router.post("/addToTeam",addToTeamValidation, addToTeamController);
+router.post("/createTask",taskValidation,createTaskController);
+module.exports = router;

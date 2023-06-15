@@ -5,7 +5,7 @@ const signIn = (req, res)=>{
     if(!errors.isEmpty()){
         console.log(errors.array())
         res.status(400).json({
-            errors: errors.array()
+            status: "error",errors: errors.array()
         })
     }else{
         createUser(req.body, res);
